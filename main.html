@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Details</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      /* Fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container my-2">
+      <!-- Input Box -->
+      <div class="d-flex">
+        <input
+          type="text"
+          class="form-control me-2"
+          placeholder="Bangladesh"
+          id="searchInput"
+        />
+        <button class="btn btn-dark" id="search-btn">Search</button>
+      </div>
+    </section>
+    <section class="container">
+      <!-- Country Details -->
+      <div class="row" id="country-details"></div>
+      <hr />
+    </section>
+    <section class="container mt-2">
+      <div id="error"></div>
+      <!-- Countries -->
+      <!-- Spinner -->
+      <div class="text-center">
+        <div id="spinner" class="spinner-border d-none" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <div id="country-container" class="row">
+        <!-- Reapeating -->
+        <!-- <div class="col-md-3 col-12">
+        
+          <div class="rounded overflow-hidden border p-2">
+            <img
+              src="https://restcountries.eu/data/umi.svg"
+              class="w-100"
+              alt=""
+            />
+          </div>
+          
+          <div
+            class="
+              py-2
+              d-flex
+              justify-content-between
+              align-items-center
+              d-md-block
+              text-md-center
+            "
+          >
+            <h1>Bangladesh</h1>
+            <button class="btn btn-dark">Learn More</button>
+          </div>
+        </div> -->
+        <!-- Repeating -->
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

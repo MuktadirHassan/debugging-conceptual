@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Books</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      /* Fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container my-2">
+      <!-- Input Box -->
+      <div class="d-flex">
+        <input
+          type="text"
+          class="form-control me-2"
+          id="searchInput"
+          value="Log horizon"
+        />
+        <button id="search-btn" class="btn btn-dark">Search</button>
+      </div>
+    </section>
+
+    <section class="container mt-2">
+      <div>Results Found: <span id="result-count">0</span></div>
+      <!-- Countries -->
+      <div id="book-container" class="row"></div>
+    </section>
+    <script src="bonus.js"></script>
+  </body>
+</html>
