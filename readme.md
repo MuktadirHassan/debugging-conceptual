@@ -38,7 +38,7 @@ arr.find()
 যেগুলো ভ্যালু আকারে পাওয়া যায়, সেগুলো property;
 যেগুলো ফাংশন আকারে থাকে, সেগুলো হচ্ছে method;
 
-null, বা undefined এর ক্ষেত্রে কোনো প্রোপার্টি বা মেথড এক্সেস করা যায় না। তার মানে, set ,get করা যায় না।
+null, বা undefined এর ক্ষেত্রে কোনো প্রোপার্টি বা মেথড এক্সেস করা যায় না + index ও এক্সেস করা যায় না। তার মানে, set ,get করা যায় না।
 
 - Uncaught TypeError: can't access property "innerHTML" of null
 - Uncaught TypeError: Cannot read property
@@ -54,3 +54,8 @@ null, বা undefined এর ক্ষেত্রে কোনো প্রো
 - Try to visualize the code execution
 - console.log() variables, function calls that you think might have caused issues
 -
+
+Fetch এর জন্য
+
+[{},{}]
+{docs: [{}, {}]}

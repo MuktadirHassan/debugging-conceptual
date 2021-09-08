@@ -40,14 +40,16 @@ const getImages = (query) => {
 
 let slideIndex = 0;
 const selectItem = (event, img) => {
-  let element = event.target;
+  let element = event.target; // image element
   element.classList.add("added");
 
   let item = sliders.indexOf(img);
+
   if (item === -1) {
     sliders.push(img);
   } else {
-    alert("Hey, Already added !");
+    // এখানে ফিল্টার এড করে এরে থেকে এলিমেন্ট টাকে রিমুভ করতে হবে
+    element.classList.remove("added");
   }
 };
 var timer;

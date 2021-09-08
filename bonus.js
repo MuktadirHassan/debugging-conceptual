@@ -1,3 +1,7 @@
+// document.addEventListener('DOMContentLoaded',()=> {
+
+// })
+
 const searchInput = document.getElementById("searchInput");
 const resultCount = document.getElementById("result-count");
 const bookContainer = document.getElementById("book-container");
@@ -5,7 +9,6 @@ const searchBtn = document.getElementById("search-btn");
 searchBtn.addEventListener("click", function () {
   const search = searchInput.value;
   if (search === "") {
-    alert("Nothing to search for...");
     return;
   }
 
@@ -50,13 +53,12 @@ function showData(data) {
               text-md-center
             "
           >
-            <h1>${item?.title}</h1>
-            <p>First Published: ${item?.first_publish_year}</p>
-            <p>Author:  ${
-              item.author_name ? item.author_name?.[0] : "No author found."
-            }</p>
+            <h1>${item.title}</h1>
+            <p>First Published: ${item.first_publish_year}</p>
+            <p>Author:  ${item.author_name?.[0]}</p>
           </div>
           `;
+
     bookContainer.appendChild(div);
   });
 }
